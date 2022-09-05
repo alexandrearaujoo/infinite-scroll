@@ -7,7 +7,7 @@ interface Props {
 }
 
 interface PokemonContextData {
-  fetchPokemons: (page: number, limit: number) => Promise<IPokemonsResponse>;
+  fetchPokemons: (page: number) => Promise<IPokemonsResponse>;
 }
 
 const PokemonContext = createContext<PokemonContextData>(
